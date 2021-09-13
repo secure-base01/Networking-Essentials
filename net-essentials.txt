@@ -1,0 +1,112 @@
+TRICKY QUESTIONS:
+
+Note: Some cisco questions truly try to be tricky so you have to read carefully! E.g. "A traveling sales representative uses a
+      cell phone to interact with the home office and customers, track samples, make sales calls, log mileage, and upload/download data
+      WHILE AT A HOTEL. Which internet connectivity method would be a preferred method to use on the mobile device due to the low cost?"
+      You would think the answer would be celluar since its a "traveling representative" making calls, but it says "while at a hotel" which
+      suggests for stationary use, hence Wi-Fi would make sense and is the correct answer. 
+
+-- "Which IP configuration parameter provides the IP address of a network device that a computer would use to access the internet?"
+   Answer: DNS Server (I chose "Host IP address", but a host IP doesnt provide anything, a DNS server provides an IP addresss) 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=> COMMUNICATIONS IN A SHARED WORLD
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+-- SOHO networks connect to a corporate network, or access centralized shared resources
+
+-- Actuators perform some action based on what a sensor detects
+
+-- RFID allows for objects to be tracked
+
+-- Three Types of personal data:
+   
+   1. VOLUNTEERED DATA: Data you willingly want to share with the world, such as social media profiles.
+   2. OBSERVED    DATA:    Data being collected based on your actions, such as your location when using cell phones.
+   3. INFERRED    DATA:    Data generated based on analysis of volunteered or observed data, such as a credit card scrore.
+
+-- A bit stands for binary digit. It consist of two possible discreet states. Every input device will translate human interaction
+   (clicks, key presses, etc) into binary code for the CPU. While output devices take binary data and translate it back into human
+   form.
+
+-- Computers use binary codes to represent and intepret letters and numbers, American Standard Code for Information Interchange
+   (ASCII) is one such code where each character is reprsented by eight bits. Codes can be used to represent almost any type of information
+   including graphics, photoes, audio, etc.
+
+-- The three common types of signal transmission used in networks -
+   1. Electrical: electrical pulses
+   2. Optical:    light pulses
+   3. Wireless:   infarred, microwave, or radio waves
+
+-- Throughput is the ACTUAL measure of how much data is successfully able to transfer while bandwidth is the theoretical measure
+   (that ISP's tend to market). Throughtput takes into account all the variables that can cause latency such as the type of data
+   being transferred, the amount of data, latency due to various network devices, etc. Throughtput cannot be faster than the slowest
+   link in the path of data being sent/recieved. Both are typically measured in bits-per-second:
+*  "the capacity of the medium to carry data is known as bandwidth" (test definition it wants you to know)
+*  speed tests are measureing the thoughput
+
+   -Thousands of bits per second (kbps)
+   -Millions of bits per second  (Mbps)
+   -Billions of bits per second  (Gbps)
+
+-- In P2P networks computers act as both the client and server at the same time. P2P can be slow due to this, which is why in
+   larger networks it is often nessesary to have dedicated servers to support the # of service requests. But P2P is simpler and lower
+   cost. But less secure and not very scalable. Alot of P2P networks dont use encryption when transmitting data. 
+*  a hybrid P2P system is where resource sharing is decentralized, but uses a centralized index server to point to the resource
+   locations stored on other peers
+
+-- The network infrastructure contains mainly three catagories of hardware components:
+   1. End devices
+   2. Intermediate devices
+   3. Network media (WLAN/LAN/WAN connections)
+
+-- End device = host. It is either the source or destination of a message transmitted over the network. As such they are the
+   interface between humans and the communication network. 
+
+=-=-=-=-=-=-=-=-=-=-=-=-=
+=> ONLINE CONNECTIONS
+=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Note: DHCP doesnt just assign the IP, but also the subnet mask, gateway and DNS
+
+-- Mobile phones use radio waves to transmit voice signals to antennas mounted on towers, which then relay the signal to other
+   towers. They are referred to as “cell phones” because the geographic area in which an individual tower can provide a signal is
+   called a cell. This type of network is used when you make a phone call to another phone (even wired). It's also
+   used when sending text messages. The most common type of cellular telephone network is called a GSM network, an
+   abbreviation of the title “Global System for Mobile Communications”. Most countries use GSM, but Verizon and Sprint use CDMA.
+
+-- The abbreviations 3G, 4G, 4G-LTE, and 5G are used to describe enhanced cell phone networks that are optimized for the fast
+   transmission of data. The “G” in these designations represents the word “generation,” so 5G is the fifth generation of the cell
+   network. Currently (2021), 4G dominates as the current most used mobile network. 4G delivers speeds that are 10x the previous 3G
+   networks. 5G delivers 100x faster speeds than 4G and connecting more devices to the network than ever before.
+
+-- The 4 main componets that can be part of a local area network are:
+*  Some devices can play more than one role, depending on how they are connected. For example, a printer directly connected
+   to a host is a peripheral. But a printer directly connected to a network device and participates directly in
+   network communications is a host.
+
+   1. Hosts
+   2. Shared Peripherals (e.g. shared drives)
+   3. Network devices
+   4. Network media (WLAN/LAN/WAN connections)
+
+-- To physically connect to a network, the end device must have a NIC. The NIC is a piece of hardware that enables the device to
+   connect to the network medium. In addition to this there are three parts to the IP configuration which must be correct for the
+   device to send and receive information on the network:
+
+   1. IP address:            This identifies the host on the network
+   2. Subnet mask:           This is used to identify the network on which the host is connected.  
+   3. Default gateway:       This identifies the networking device that the host uses to access the internet or another remote network.  
+   x. DNS Server (optional): Most network applications use a domain name, such as www.cisco.com, instead of an IP address when accessing
+                             information on the internet. A DNS server is used to translate the domain name to its IP address. Without an 
+                             IP address of a DNS server, the user will have difficulty accessing the internet.
+
+-- Physical vs Logical topology: A physical topology diagram shows where the wiring is installed and the locations of the
+   networking devices that connect the hosts. Essentially all the information that would be useful for someone who needs to
+   physically access the hardware. Logical topology on the otherhand is more concerned with the intrincancies of the network that
+   you cant visablly see such as device names, IP addressing, configuration information, and network designations.
+*  for the test to identify bewteen physical and logical, if you see a firewall label then its logical as a physical topology
+   would simly label the device as a router
+*  when considering compartmentalization for security you may want to only give physical topology to the guys who need it, and logical
+   topologiy to the sys admins. if you want you can combine both topolgies into one.
+
